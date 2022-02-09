@@ -1,0 +1,70 @@
+.toggle_btn {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	height: 27px;
+	width: 35px;
+	cursor: pointer;
+	z-index: 100;
+	transition: opacity .25s ease;
+	
+	&:hover {opacity: .7;}
+	span {
+		background: $nav-green;
+		border: none;
+		height: 4px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition:  all .35s ease;
+		&:nth-of-type(2) {top: 11px;}
+		&:nth-of-type(3) {top: 22px;}
+	}
+	&.active {
+		.top    {transform: translateY(11px) translateX(0) rotate(45deg);}
+		.middle {opacity: 0;}
+		.bottom {transform: translateY(-11px) translateX(0) rotate(-45deg);}
+	}
+}
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: rgb(250,250,250);
+	overflow-x: hidden;
+	transition: 0.5s;	
+		
+	&.open {
+		opacity: 1;
+		width: 300px;
+	}
+	.overlay-content {
+		position: relative;
+		top: 20%;
+		width: 100%;
+		text-align: center;
+		a {
+			padding: 8px;
+			text-decoration: none;
+			font-size: 20px;
+			letter-spacing: 2px;
+			color: #929191;
+			display: block;
+			transition: 0.3s;
+			&:hover, &:focus {color: #fa6900;}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+    .overlay {
+		&.open {
+			width: 100%;
+		}
+	}
+}

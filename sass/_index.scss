@@ -1,0 +1,38 @@
+.middle-box {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    height: 200px;
+    transform: translate(0, -50%);
+    font-family: Lucida Sans, Lucida Grande, Lucida Sans Unicode, sans-serif;
+    font-weight: bold;
+    line-height: 34px;
+    // background-color: cornflowerblue;
+
+    .first {
+        font-size: 36px;
+    }
+    .second {
+        font-size: 30px;
+        color: $nav-green;
+    }
+    div {
+        position: absolute;
+        bottom: 0;
+        a {            
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #555;
+            text-decoration: none;
+            transition: 0.5s;
+            // background-color: blueviolet;
+            &:hover {color: black;}
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .middle-box {      
+        left: 16.5%;        
+    }
+}
