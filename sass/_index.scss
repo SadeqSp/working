@@ -1,6 +1,6 @@
 $animate-delay: 2s;
 
-.middle-box {
+.index_box {
     position: absolute;
     top: 55%;
     left: 22%;
@@ -12,14 +12,14 @@ $animate-delay: 2s;
     line-height: 34px;
     // background-color: cornflowerblue;
 
-    #first {
+    #index_first {
         font-size: 36px;
     }
-    #second {
+    #index_second {
         font-size: 30px;
         color: $nav-green;
     }
-    .link {
+    .index_link {
         position: absolute;
         bottom: 0;
         a {            
@@ -43,9 +43,9 @@ $animate-delay: 2s;
 @media screen and (max-width: 600px) {
     .middle-box {
         height: 250px;
-        #first {font-size: 30px;}
-        #second {font-size: 24px;}
-        .link {
+        #index_first {font-size: 30px;}
+        #index_second {font-size: 24px;}
+        .index_link {
             a {font-size: 15px;}
         }
     }
