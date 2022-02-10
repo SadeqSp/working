@@ -1,5 +1,3 @@
-$animate-delay: 2s;
-
 .index_box {
     position: absolute;
     top: 55%;
@@ -34,14 +32,14 @@ $animate-delay: 2s;
 }
 
 @media screen and (max-width: 900px) {
-    .middle-box {      
+    .index_box {      
         left: 16.5%;
         width: 75%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .middle-box {
+    .index_box {
         height: 250px;
         #index_first {font-size: 30px;}
         #index_second {font-size: 24px;}
