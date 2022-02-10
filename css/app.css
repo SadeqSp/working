@@ -88,7 +88,7 @@
   text-align: center;
 }
 .overlay .overlay-content a, .overlay .overlay-content span {
-  padding: 12px;
+  padding: 10px;
   font-size: 20px;
   letter-spacing: 2px;
   color: #929191;
@@ -159,18 +159,18 @@ body {
   font-weight: bold;
   line-height: 34px;
 }
-.middle-box .first {
+.middle-box #first {
   font-size: 36px;
 }
-.middle-box .second {
+.middle-box #second {
   font-size: 30px;
   color: #006837;
 }
-.middle-box div {
+.middle-box .link {
   position: absolute;
   bottom: 0;
 }
-.middle-box div a {
+.middle-box .link a {
   font-size: 18px;
   letter-spacing: 2px;
   color: #555;
@@ -178,7 +178,7 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.middle-box div a:hover {
+.middle-box .link a:hover {
   color: black;
 }
 
@@ -192,13 +192,13 @@ body {
   .middle-box {
     height: 250px;
   }
-  .middle-box .first {
+  .middle-box #first {
     font-size: 30px;
   }
-  .middle-box .second {
+  .middle-box #second {
     font-size: 24px;
   }
-  .middle-box div a {
+  .middle-box .link a {
     font-size: 15px;
   }
 }
