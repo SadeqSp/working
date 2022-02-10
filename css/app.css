@@ -87,23 +87,36 @@
   width: 100%;
   text-align: center;
 }
-.overlay .overlay-content a {
-  padding: 8px;
-  text-decoration: none;
+.overlay .overlay-content a, .overlay .overlay-content span {
+  padding: 12px;
   font-size: 20px;
   letter-spacing: 2px;
   color: #929191;
   display: block;
+}
+.overlay .overlay-content a {
+  text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .overlay .overlay-content a:hover, .overlay .overlay-content a:focus {
   color: #fa6900;
 }
+.overlay .overlay-content span {
+  color: #fa6900;
+}
 
 @media screen and (max-width: 600px) {
+  .toggle_btn {
+    top: 30px;
+    right: 30px;
+  }
+
   .overlay.open {
     width: 100%;
+  }
+  .overlay .overlay-content a, .overlay .overlay-content span {
+    font-size: 30px;
   }
 }
 body {
@@ -128,10 +141,17 @@ body {
     left: 50px;
   }
 }
+@media screen and (max-width: 600px) {
+  #logo {
+    left: 30px;
+    width: 60px;
+  }
+}
 .middle-box {
   position: absolute;
   top: 55%;
   left: 22%;
+  width: 65%;
   height: 200px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -165,5 +185,20 @@ body {
 @media screen and (max-width: 900px) {
   .middle-box {
     left: 16.5%;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .middle-box {
+    height: 250px;
+  }
+  .middle-box .first {
+    font-size: 30px;
+  }
+  .middle-box .second {
+    font-size: 24px;
+  }
+  .middle-box div a {
+    font-size: 15px;
   }
 }

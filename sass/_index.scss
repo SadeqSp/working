@@ -2,6 +2,7 @@
     position: absolute;
     top: 55%;
     left: 22%;
+    width: 65%;
     height: 200px;
     transform: translate(0, -50%);
     font-family: Lucida Sans, Lucida Grande, Lucida Sans Unicode, sans-serif;
@@ -33,6 +34,18 @@
 
 @media screen and (max-width: 900px) {
     .middle-box {      
-        left: 16.5%;        
+        left: 16.5%;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .middle-box {
+        height: 250px;
+        .first {font-size: 30px;}
+        .second {font-size: 24px;}
+        div {
+            a {font-size: 15px;}
+        }
     }
 }
