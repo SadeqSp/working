@@ -1,8 +1,8 @@
 .index_box {
     position: absolute;
     top: 55%;
-    left: 22%;
-    width: 65%;
+    left: 10%;
+    width: 80%;
     height: 200px;
     transform: translate(0, -50%);
     font-family: Lucida Sans, Lucida Grande, Lucida Sans Unicode, sans-serif;
@@ -10,13 +10,8 @@
     line-height: 34px;
     // background-color: cornflowerblue;
 
-    #index_first {
-        font-size: 36px;
-    }
-    #index_second {
-        font-size: 30px;
-        color: $nav-green;
-    }
+    #index_first {font-size: 36px;}
+    #index_second {font-size: 30px; color: $nav-green;}
     .index_link {
         position: absolute;
         bottom: 0;
@@ -28,13 +23,6 @@
             transition: 0.5s;
             &:hover {color: black;}
         }
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .index_box {      
-        left: 16.5%;
-        width: 75%;
     }
 }
 

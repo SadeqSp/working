@@ -1,12 +1,35 @@
-.toggle_btn {
+#logo {
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    z-index: 100;
+    transition: 0.5s;
+    background-color: rgba(255,255,255, 0);
+
+    #logoImg {
+        position: absolute;
+        left: 15vw;
+        margin-top: 15px;
+        width: 100px;
+        height: 100px;
+        z-index: 1000;
+        transition: 0.5s;
+        background: no-repeat;
+        background-size: contain;
+        background-image: url('../assets/logo.png');
+    }
+}
+
+#toggle {
 	position: fixed;
 	top: 50px;
 	right: 50px;
 	height: 27px;
 	width: 35px;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 1000;
 	transition: opacity .25s ease;
+	transition: top 0.5s ease;
 	
 	&:hover {opacity: .7;}
 	span {
@@ -22,6 +45,7 @@
 		&:nth-of-type(3) {top: 22px;}
 	}
 	&.active {
+		span    {background-color: $nav-orange;}
 		.top    {transform: translateY(11px) translateX(0) rotate(45deg);}
 		.middle {opacity: 0;}
 		.bottom {transform: translateY(-11px) translateX(0) rotate(-45deg);}
@@ -32,10 +56,11 @@
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 1;
+	z-index: 999;
 	top: 0;
 	right: 0;
-	background-color: rgb(250,250,250);
+	// background-color: rgb(250,250,250);
+	background-color: $nav-green;
 	overflow-x: hidden;
 	transition: 0.5s;	
 		
@@ -52,21 +77,37 @@
 			padding: 10px;
 			font-size: 20px;
 			letter-spacing: 2px;
-			color: #929191;
+			color: #999;
 			display: block;
 		}
 		a {
 			text-decoration: none;
 			transition: 0.3s;
-			&:hover, &:focus {color: $nav-orange;}
+			&:hover, &:focus {color: white;}
 		}
 		span {color: $nav-orange;}
 	}
 }
 
+@media screen and (max-width: 900px) {
+    #logo {
+        #logoImg {
+            left: 50px;
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
-	.toggle_btn {
-		top: 30px;
+	#logo {
+        height: 80px;
+        #logoImg {
+            left: 30px;
+			margin-top: 10px;
+            width: 60px;
+        }
+    }
+	#toggle {
+		top: 27px;
 		right: 30px;
 	}
     .overlay {

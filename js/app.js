@@ -1,8 +1,37 @@
-// NAV
+// nav toggling
 $('#toggle').click(function() {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
 });
+
+
+// nav scrolling
+window.onscroll = function() { scrollFunction() };
+function scrollFunction() {
+    var logo = document.getElementById("logo");
+    var logoImg = document.getElementById("logoImg");
+    var toggle = document.getElementById("toggle");
+
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        if ($(window).width() >= 600) {
+            logo.style.backgroundColor = 'rgba(250,250,250, 0.9)';
+            logo.style.height = '110px';
+            logoImg.style.width = '80px';
+            toggle.style.top = '40px';
+        } else {
+            logo.style.backgroundColor = 'rgba(250,250,250, 0.9)';
+        }
+    } else {
+        if ($(window).width() >= 600) {
+            logo.style.backgroundColor = 'rgba(250,250,250, 0)';
+            logo.style.height = '130px';
+            logoImg.style.width = '100px';
+            toggle.style.top = '50px';
+        } else {
+            logo.style.backgroundColor = 'rgba(250,250,250, 0)';
+        }
+    }
+}
 
 
 // detect page name
@@ -44,4 +73,19 @@ if(page =='csr') {
 }
 
 
-//
+// csr slider animate-scrolling
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 50;
+    
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+}
+window.addEventListener("scroll", reveal);

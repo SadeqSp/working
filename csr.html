@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -8,17 +7,21 @@
     <title>Home</title>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/app.css" id="pagesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- slider -->
     <link rel="stylesheet" type="text/css" href="css/slider.css" />
-</head>
 
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+</head>
 <body>
-    <a href="index.html"><div id="logo"></div></a>
+    <div id="logo">
+        <a href="index.html"><div id="logoImg"></div></a>
+    </div>
+
+
     <!-- nav -->
-    <div class="toggle_btn" id="toggle">
+    <div id="toggle">
         <span class="top"></span><span class="middle"></span><span class="bottom"></span>
     </div>
     <div id="overlay" class="overlay">
@@ -30,9 +33,6 @@
             <a href="contact.html">Contact</a>
         </div>
     </div>
-
-
-    
     
 
     <section>
@@ -41,8 +41,13 @@
             <div id="csr_first"><!-- JS --></div>
         </div>
 
-        <div class="csr_slider csr_slider1">
-            <div class="onSlider"> VALUING THE NATURE</div>
+        <div class="csr_slider csr_slider1 animate__animated animate__slideInUp animate__delay-2s">
+            <div class="onSlider">
+                <div>
+                    <h5>valuing the nature</h5>
+                    <p>Here in Millennium, we have a passion for nature. We have developed procedures to only go through projects that are good for business and good for ecosystem.</p>
+                </div>
+            </div>
             <div class="ws_images">
                 <ul>
                     <li><img src="images/csr1-2.jpg" alt="2" title="2" /></li>
@@ -51,8 +56,13 @@
                 </ul>
             </div>
         </div>	
-        <div class="csr_slider csr_slider2">
-            <div class="onSlider"> VALUING THE NATURE</div>
+        <div class="csr_slider csr_slider2 reveal">
+            <div class="onSlider">
+                <div>
+                    <h5>world-class operation performance</h5>
+                    <p>Maintaining world-class operation performance in natural resource efficacy, environment, health and safety. We believe that clean air and livable climate are inalienable human rights. Millennium is committed to operational excellence principles to decrease the chances of major climate change events.</p>
+                </div>
+            </div>  
             <div class="ws_images">
                 <ul>
                     <li><img src="images/csr2-2.jpg" alt="2" title="2" /></li>
@@ -61,8 +71,13 @@
                 </ul>
             </div>
         </div>
-        <div class="csr_slider csr_slider3">
-            <div class="onSlider"> VALUING THE NATURE</div>
+        <div class="csr_slider csr_slider3 reveal">
+            <div class="onSlider">
+                <div>
+                    <h5>united to make an impact</h5>
+                    <p>Engaging employees worldwide to positively impact the lives of people. Fostering sustainable development for all human being across the globe. Everyone in Millennium is passionate to make an impact and our impact is empowering chemical enterprises to lead the 4.0 industrial revolution.</p>
+                </div>
+            </div>
             <div class="ws_images">
                 <ul>
                     <li><img src="images/csr3-1.jpg" alt="2" title="2" /></li>
@@ -70,12 +85,25 @@
                 </ul>
             </div>
         </div>	
-        
-    </section>
 
+        <footer>
+            <a href="index.html"><div class="footerLogo"></div></a>
+            <div class="footer_box">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><span>CSR</span></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="copy">
+                    All rights reserves for Millennium Chemical, COSMETIC. Textile food consult & trade. LTD Co
+                </div>
+            </div>
+        </footer>
+
+    </section>      
     
-        
-
 
     <!-- slider -->
     <script type="text/javascript" src="js/wowslider.js"></script>
@@ -83,5 +111,4 @@
 
     <script type="text/javascript" src="js/app.js"></script>
 </body>
-
 </html>
