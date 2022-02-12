@@ -14,7 +14,6 @@
         text-shadow: 5px 5px 5px #ccc;
     }
 }
-
 .csr_slider {
     width: 100% !important;
     margin-bottom: 40px !important;
@@ -58,21 +57,18 @@
 
 
 
-
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: 1s all ease;
-  }
-  
-  .reveal.active{
+}
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
-  }
+}
 
 
-  
 
 @media screen and (max-width: 900px) {
     .csr_box {
@@ -96,7 +92,7 @@
 
 @media screen and (max-width: 600px) {
     .csr_box {
-        margin: 20px 0 60px;
+        margin: 50px 0 60px;
     }
     .csr_slider {
         .onSlider {

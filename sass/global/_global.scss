@@ -3,21 +3,18 @@ body {
     margin: 0;
     padding: 0;
 }
-
 section {
     position: relative;
     width: 70vw;
-    min-height: calc(100vh - 200px);
-    padding: 200px 0 0;
-    margin: 0 auto;
+    margin: 200px auto 0;
     // background-color: salmon;
+    &.index {min-height: calc(100vh - 300px);}
 }
-
 footer {
     position: relative;
-    width: 60%;
+    width: 40%;
     padding: 20px 0;
-    margin: 350px auto 0;
+    margin: 250px auto 0;
     display: flex; 
     justify-content: space-between;
 
@@ -27,7 +24,7 @@ footer {
         margin-right: 50px;
         background: no-repeat;
         background-size: contain;
-        background-image: url('../assets/logo.png');
+        background-image: url('../assets/logo-footer.png');
     }   
 
     // background-color: khaki;
@@ -63,17 +60,17 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    footer {width: 80%;}
+    footer {width: 60%;}
 }
 
 @media screen and (max-width: 900px) {
     section {
         width: calc(100% - 100px);
-        min-height: calc(100vh - 200px);
-        padding: 100px 0 0;
+        margin: 150px auto 0;
+        &.index {min-height: calc(100vh - 200px);}
     }
     footer {
-        width: 100%;
+        width: calc(100% - 100px);
         margin: 200px auto 0;
     }
 }
@@ -81,7 +78,8 @@ footer {
 @media screen and (max-width: 600px) {
     section {
         width: calc(100% - 60px);
-        padding: 100px 0;
+        margin: 100px auto 0;
+        &.index {min-height: calc(100vh - 150px);}
     }
     footer {display: none;}
 }

@@ -60,6 +60,7 @@ function fadeIn_each(boxName, text, class1, class2, delay, next, orange=0) {
 let index_ftext = "MILLENNIUM CHEMICAL";
 let index_stext = "EXPANDING THE HORIZON";
 let csr_text = "CORPORATE SOCIAL RESPONSIBILITY";
+let con_text = "GET IN TOUCH WITH US";
 
 let class1 = "animate__animated";
 let class2 = "animate__fadeIn";
@@ -68,8 +69,11 @@ if(page == 'index') {
     fadeIn_each("index_second", index_stext, class1, class2, 1.5, 0.05);
     fadeIn_each("index_first", index_ftext, class1, class2, 1, 0.05);
 }
-if(page =='csr') {
-    fadeIn_each("csr_first", csr_text, class1, class2, 1, 0.05, 'yes');
+if(page == 'csr') {
+    fadeIn_each("csr_first", csr_text, class1, class2, 0.5, 0.05, 'yes');
+}
+if(page == 'contact') {
+    fadeIn_each("con_first", con_text, class1, class2, 0.5, 0.05);
 }
 
 

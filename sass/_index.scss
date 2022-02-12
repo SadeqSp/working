@@ -7,11 +7,17 @@
     transform: translate(0, -50%);
     font-family: Lucida Sans, Lucida Grande, Lucida Sans Unicode, sans-serif;
     font-weight: bold;
-    line-height: 34px;
     // background-color: cornflowerblue;
 
-    #index_first {font-size: 36px;}
-    #index_second {font-size: 30px; color: $nav-green;}
+    #index_first {
+        font-size: 36px; 
+        line-height: 34px;
+    }
+    #index_second {
+        font-size: 30px;
+        line-height: 28px;
+        color: $nav-green;
+    }
     .index_link {
         position: absolute;
         bottom: 0;
