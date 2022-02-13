@@ -49,7 +49,7 @@ function fadeIn_each(boxName, text, class1, class2, delay, next) {
         if((page == 'csr') && ((i == 0) || (i == 10) || (i == 17))) {
             span.classList.add('green');
         }
-        if(page == 'about') {
+        if((page == 'about') && (boxName == 'abt_first')) {
             span.classList.add('green');
         }
         span.style.animationDelay = d+'s';
@@ -64,7 +64,8 @@ let index_ftext = "MILLENNIUM CHEMICAL";
 let index_stext = "EXPANDING THE HORIZON";
 let csr_text = "CORPORATE SOCIAL RESPONSIBILITY";
 let con_text = "GET IN TOUCH WITH US";
-let abt_text = "WHO WE ARE";
+let abt_ftext = "WHO WE ARE";
+let abt_ttext = "GLOBAL PRESENCE";
 
 // let class1 = "animate__animated";
 // let class2 = "animate__fadeIn";
@@ -72,17 +73,18 @@ let class1 = "wow";
 let class2 = "fadeIn";
 
 if(page == 'index') {
-    fadeIn_each("index_second", index_stext, class1, class2, 1.5, 0.05);
-    fadeIn_each("index_first", index_ftext, class1, class2, 1, 0.05);
+    fadeIn_each("index_second", index_stext, class1, class2, 1.5, 0.1);
+    fadeIn_each("index_first", index_ftext, class1, class2, 1, 0.1);
 }
 if(page == 'csr') {
-    fadeIn_each("csr_first", csr_text, class1, class2, 0.5, 0.05);
+    fadeIn_each("csr_first", csr_text, class1, class2, 0.5, 0.1);
 }
 if(page == 'contact') {
-    fadeIn_each("con_first", con_text, class1, class2, 0.5, 0.05);
+    fadeIn_each("con_first", con_text, class1, class2, 0.5, 0.1);
 }
 if(page == 'about') {
-    fadeIn_each("abt_first", abt_text, class1, class2, 0.5, 0.05);
+    fadeIn_each("abt_first", abt_ftext, class1, class2, 0.5, 0.1);
+    fadeIn_each("abt_third", abt_ttext, class1, class2, 0.5, 0.1);
 }
 
 

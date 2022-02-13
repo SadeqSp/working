@@ -12,9 +12,9 @@
         transform: translate(-50%, -50%);
         width: 56%;
         #con_first {
-            font-weight: bold;
-            line-height: 6vw;
             font-size: 6vw;
+            line-height: 6vw;
+            font-weight: bold;
             color: #444;
             text-shadow: 5px 5px 5px #ccc;
         }
@@ -90,6 +90,10 @@
         .con_box {
             line-height: 10vw;
             font-size: 10vw;
+            #con_first {
+                font-size: 8vw;
+                line-height: 8vw;
+            }
         }
     }
     .con_form {
@@ -105,6 +109,10 @@
         .con_box {
             line-height: 12vw;
             font-size: 12vw;
+            #con_first {
+                font-size: 10vw;
+                line-height: 10vw;
+            }
         }
     }
     .con_form {
@@ -113,7 +121,5 @@
             input, textarea {width: 90%;}
         }
     }
-    .con_map {
-        margin-bottom: 200px;
-    }
+    .con_map {margin-bottom: 50px;}
 }

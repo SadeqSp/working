@@ -84,8 +84,6 @@ footer {
     section {  
         &.index, &.csr {
             width: calc(100% - 100px);
-            margin: 150px auto 50px;
-            min-height: calc(100vh - 200px);
         }
     }
     footer {
@@ -98,8 +96,9 @@ footer {
     section {
         &.index, &.csr {
             width: calc(100% - 60px);
-            margin: 100px auto 50px;
-            min-height: calc(100vh - 150px);}
+            margin: 150px auto 50px;
+            min-height: calc(100vh - 200px);
+        }
     }
     footer {display: none;}
 }
