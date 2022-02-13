@@ -1,0 +1,61 @@
+.abt_head {
+    position: relative; 
+    height: 90vh;
+    background: no-repeat;
+    background-size: cover;
+    background-image: url('../images/about-top.jpg');
+    border-bottom: 1px solid white;
+    .abt_box {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 56%;
+        #abt_first {
+            font-weight: bold;
+            line-height: 6vw;
+            font-size: 6vw;
+            margin-bottom: 80px;
+            text-shadow: 5px 5px 5px #ccc;
+        }
+        #abt_second {
+            border-top: 1px solid $nav-green;
+            border-bottom: 1px solid $nav-green;
+            padding: 10px 0;
+            line-height: 1.2vw;
+            font-size: 1vw;
+            color: #333;
+        }
+    }
+}
+.abt_rest {
+    position: relative; 
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 0 20px;
+    background-color: brown;
+    h2, h3, p {
+        background-color: burlywood;
+    }
+    h2 {
+        font-size: 48px;
+        color: white;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+}
+.abt_map {
+    position: relative;
+    border-bottom: 5px solid $nav-green;
+    background-color: #868688;
+    padding: 50px 0;
+    img {width: 60%; margin: 0 20%;}
+}
+@media screen and (max-width: 900px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}

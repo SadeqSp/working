@@ -5,15 +5,29 @@ body {
 }
 section {
     position: relative;
-    background-color: salmon;
+    // width: 100%;
+    // background-color: salmon;
     &.index, &.csr {
         width: 70vw;
         margin: 200px auto 100px;
         min-height: calc(100vh - 300px);
     }
-    &.contact {
-        width: 100%;
-    }
+}
+//about, contact
+.overhead {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(white, 0.3);
+}
+.abt_box,
+.con_box,
+.csr_box,
+.index_box {
+    font-family: Lucida Sans, Lucida Grande, Lucida Sans Unicode, sans-serif;
+    // background-color: cornflowerblue;
 }
 footer {
     position: relative;
@@ -39,9 +53,7 @@ footer {
     // ul li {background-color: maroon;}
 
     .footer_box {
-        width:100%;
-        color: #777;
-        
+        width:100%;        
         ul {
             padding: 0;
             display: flex;
@@ -52,7 +64,7 @@ footer {
                 &:last-child {margin-right: 0;}
                 a {
                     transition: 0.5s;
-                    color: #777;
+                    color: #999;
                     text-decoration: none;
                     &:hover {color: black;}
                 }
@@ -60,7 +72,7 @@ footer {
                 a, span {font-weight: bold;}
             }
         }
-        .copy {font-size: 12px;}
+        .copy {font-size: 12px; color: #777;}
     }
 }
 

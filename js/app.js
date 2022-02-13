@@ -49,6 +49,9 @@ function fadeIn_each(boxName, text, class1, class2, delay, next, orange=0) {
         if((page == 'csr') && ((i == 0) || (i == 10) || (i == 17))) {
             span.classList.add('green');
         }
+        if(page == 'about') {
+            span.classList.add('green');
+        }
         span.style.animationDelay = d+'s';
         d += next;
         let c = document.createTextNode(text.charAt(i));
@@ -61,6 +64,7 @@ let index_ftext = "MILLENNIUM CHEMICAL";
 let index_stext = "EXPANDING THE HORIZON";
 let csr_text = "CORPORATE SOCIAL RESPONSIBILITY";
 let con_text = "GET IN TOUCH WITH US";
+let abt_text = "WHO WE ARE";
 
 let class1 = "animate__animated";
 let class2 = "animate__fadeIn";
@@ -74,6 +78,9 @@ if(page == 'csr') {
 }
 if(page == 'contact') {
     fadeIn_each("con_first", con_text, class1, class2, 0.5, 0.05);
+}
+if(page == 'about') {
+    fadeIn_each("abt_first", abt_text, class1, class2, 0.5, 0.05);
 }
 
 
