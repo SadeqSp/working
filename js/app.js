@@ -66,6 +66,7 @@ let csr_text = "CORPORATE SOCIAL RESPONSIBILITY";
 let con_text = "GET IN TOUCH WITH US";
 let abt_ftext = "WHO WE ARE";
 let abt_ttext = "GLOBAL PRESENCE";
+let pro_text = "PRODUCTS";
 
 // let class1 = "animate__animated";
 // let class2 = "animate__fadeIn";
@@ -85,6 +86,9 @@ if(page == 'contact') {
 if(page == 'about') {
     fadeIn_each("abt_first", abt_ftext, class1, class2, 0.5, 0.1);
     fadeIn_each("abt_third", abt_ttext, class1, class2, 0.5, 0.1);
+}
+if(page == 'products') {
+    fadeIn_each("pro_first", pro_text, class1, class2, 0.5, 0.1);
 }
 
 
