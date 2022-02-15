@@ -75,6 +75,18 @@ footer {
         .copy {font-size: 12px; color: #777;}
     }
 }
+.preload_images {
+    position: absolute;
+    overflow: hidden;
+    left: -9999px;
+    top: -9999px;
+    height: 1px;
+    width: 1px;
+}
+.preload {
+    height: 1px;
+    width: 1px;
+}
 
 @media screen and (max-width: 1200px) {
     footer {width: 60%;}

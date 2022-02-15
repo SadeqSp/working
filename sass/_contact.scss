@@ -20,11 +20,12 @@
         }
     }
 }
+.con_form, .con_map, .adrs {background-color: rgba($nav-green, 0.9);}
 .con_form {
     position: relative;
     width: 100%;
     height: 600px;
-    background-color: rgba($nav-green, 0.9);
+    
 
     .form_box {
         position: absolute;
@@ -74,14 +75,23 @@
     position: relative;
     width: 100%;
     height: auto;
-    padding: 5px 0;
-    background-color: $nav-green;
+    padding: 5px 0 5px;
     border-top: 1px solid white;
+    border-bottom: 1px solid white;
     iframe {
         display: block;
         width: 100%;
+        border-bottom: 1px solid white;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
+    }
+}
+.adrs {
+    padding: 100px 0;
+    p {
+        width: 50%;
+        margin: 0 auto 10px;
+        color: white;
     }
 }
 
@@ -102,6 +112,7 @@
             input {width: 80%;}
         }
     }
+    .adrs p {width: 70%;}
 }
 
 @media screen and (max-width: 600px) {
@@ -121,5 +132,5 @@
             input, textarea {width: 90%;}
         }
     }
-    .con_map {margin-bottom: 50px;}
+    .adrs p {width: 80%;}
 }
