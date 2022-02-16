@@ -491,6 +491,7 @@
 
   .adrs p {
     width: 80%;
+    text-decoration: none;
   }
 }
 .csr_box {
