@@ -894,6 +894,25 @@
   .parallax, .parallaxin {
     padding: 0 0 50px;
   }
+
+  .parallax .prod-1 {
+    background-image: url("../images/prod-1-m.jpg") !important;
+  }
+  .parallax .prod-2 {
+    background-image: url("../images/prod-2-m.jpg") !important;
+  }
+  .parallax .prod-3 {
+    background-image: url("../images/prod-3-m.jpg") !important;
+  }
+  .parallax .prod-4 {
+    background-image: url("../images/prod-4-m.jpg") !important;
+  }
+  .parallax .prod-5 {
+    background-image: url("../images/prod-5-m.jpg") !important;
+  }
+  .parallax .prod-6 {
+    background-image: url("../images/prod-6-m.jpg") !important;
+  }
 }
 body {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
