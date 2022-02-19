@@ -4,11 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <title>Millennium Chemical</title>
-    <link rel="icon" href="assets/favicon.png" type="image/png" sizes="16x8">
-    
-    <!-- preload -->
-    <link rel="preload" as="image" href="assets/logo.png">
-    <link rel="preload" as="image" href="assets/video_pattern.png">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src='https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js'></script>
@@ -20,9 +16,6 @@
     <div id="logo">
         <a href="index.html"><div id="logoImg"></div></a>
     </div>
-
-    
-    <!-- nav -->
     <div id="toggle">
         <span class="top"></span><span class="middle"></span><span class="bottom"></span>
     </div>
@@ -37,20 +30,21 @@
     </div>
 
 
-    <!-- video -->
-    <video id="video_background" preload="auto" autoplay="true" loop muted>
+    <video id="ind_video" preload="auto" autoplay="true" loop muted>
         <source src="assets/video.mp4" type="video/mp4">
         <source src=" " type="video/webm">  
         This browser does not support video
     </video>
-    <div id="video_pattern"></div>
 
 
-    <section class="index">
-        <div class="index_box">
-            <div id="index_first"><!-- JS --></div>
-            <div id="index_second"><!-- JS --></div>
-            <div class="index_link animate__animated animate__fadeIn animate__delay-2s"><a href="about.html">ABOUT US</a></div>
+    <section>
+        <div class="head ind_head">
+            <div class="overhead"></div>
+            <div class="box">
+                <div id="first"><!-- JS --></div>
+                <div id="second"><!-- JS --></div>
+                <div class="link wow fadeIn" data-wow-delay="3s"><a href="about.html">ABOUT US</a></div>
+            </div>
         </div>
     </section>
 

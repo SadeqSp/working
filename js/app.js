@@ -46,12 +46,17 @@ function fadeIn_each(boxName, text, class1, class2, delay, next) {
     for (let i = 0, d = delay; i < text.length; i++) {
         let span = document.createElement("SAPN");
         span.classList.add(class1, class2);
+
+        if((page == 'index') && (boxName == 'second')) {
+            span.classList.add('green');
+        }
         if((page == 'csr') && ((i == 0) || (i == 10) || (i == 17))) {
             span.classList.add('green');
         }
-        if((page == 'about') && (boxName == 'abt_first')) {
+        if((page == 'about') && (boxName == 'first')) {
             span.classList.add('green');
         }
+
         span.style.animationDelay = d+'s';
         d += next;
         let c = document.createTextNode(text.charAt(i));
@@ -68,27 +73,25 @@ let abt_ftext = "WHO WE ARE";
 let abt_ttext = "GLOBAL PRESENCE";
 let pro_text = "PRODUCTS";
 
-// let class1 = "animate__animated";
-// let class2 = "animate__fadeIn";
 let class1 = "wow";
 let class2 = "fadeIn";
 
 if(page == 'index') {
-    fadeIn_each("index_second", index_stext, class1, class2, 1.5, 0.1);
-    fadeIn_each("index_first", index_ftext, class1, class2, 1, 0.1);
+    fadeIn_each("first", index_ftext, class1, class2, 1, 0.1);
+    fadeIn_each("second", index_stext, class1, class2, 1.5, 0.1);
 }
 if(page == 'csr') {
-    fadeIn_each("csr_first", csr_text, class1, class2, 0.5, 0.1);
+    fadeIn_each("first", csr_text, class1, class2, 0.5, 0.1);
 }
 if(page == 'contact') {
-    fadeIn_each("con_first", con_text, class1, class2, 0.5, 0.1);
+    fadeIn_each("first", con_text, class1, class2, 0.5, 0.1);
 }
 if(page == 'about') {
-    fadeIn_each("abt_first", abt_ftext, class1, class2, 0.5, 0.1);
-    fadeIn_each("abt_third", abt_ttext, class1, class2, 0.5, 0.1);
+    fadeIn_each("first", abt_ftext, class1, class2, 0.5, 0.1);
+    fadeIn_each("abt_third", abt_ttext, class1, class2, 0, 0.05);
 }
 if(page == 'products') {
-    fadeIn_each("pro_first", pro_text, class1, class2, 0.5, 0.1);
+    fadeIn_each("first", pro_text, class1, class2, 0.5, 0.1);
 }
 
 
