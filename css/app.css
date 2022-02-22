@@ -314,9 +314,9 @@ footer .footer_box .copy {
 
 .abt_our {
   padding: 100px 0;
-  margin-bottom: 20px;
+  background-color: cadetblue;
 }
-.abt_our:first-child {
+.abt_our.first_abt_our {
   padding-bottom: 0;
 }
 .abt_our h2 {
@@ -473,7 +473,6 @@ footer .footer_box .copy {
   .abt_our {
     display: block;
     padding: 50px 0;
-    margin-bottom: 20px;
   }
   .abt_our h2 {
     width: 60%;
@@ -493,6 +492,13 @@ footer .footer_box .copy {
     padding: 20px 0 0;
     border-bottom-right-radius: unset;
     background-color: unset;
+  }
+
+  .abt_why .abt_whys div {
+    width: 90%;
+  }
+  .abt_why .abt_whys div h3 {
+    font-size: 20px;
   }
 
   .abt_map {
