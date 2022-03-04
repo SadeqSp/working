@@ -47,7 +47,7 @@ function fadeIn_each(boxName, text, class1, class2, delay, next) {
         let span = document.createElement("SAPN");
         span.classList.add(class1, class2);
 
-        if((page == 'index') && (boxName == 'second')) {
+        if(((page == 'index') || (page == '')) && (boxName == 'second')) {
             span.classList.add('green');
         }
         if((page == 'csr') && ((i == 0) || (i == 10) || (i == 17))) {
@@ -76,7 +76,9 @@ let pro_text = "PRODUCTS";
 let class1 = "wow";
 let class2 = "fadeIn";
 
-if(page == 'index') {
+if((page == 'index') || (page == '')) {
+    console.log('home');
+    
     fadeIn_each("first", index_ftext, class1, class2, 1, 0.1);
     fadeIn_each("second", index_stext, class1, class2, 1.5, 0.1);
 }
