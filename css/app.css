@@ -313,11 +313,10 @@ footer .footer_box .copy {
 }
 
 .abt_our {
-  padding: 100px 0;
-  background-color: cadetblue;
+  padding: 100px 0 0;
 }
-.abt_our.first_abt_our {
-  padding-bottom: 0;
+.abt_our.last_abt_our {
+  padding-bottom: 100px;
 }
 .abt_our h2 {
   width: 40%;
