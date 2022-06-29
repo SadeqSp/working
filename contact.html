@@ -41,10 +41,11 @@
         <div class="con_form">
             <div class="form_box">
                 <h1>Contact us</h1>
-                <form method="post" action="scripts/contact.php">
-                    <input type="text" name="Name" placeholder="Enter Name" >
-                    <input type="email" name="E-Mail" placeholder="Enter E-Mail" >
-                    <textarea name="Message" cols="30" rows="10" placeholder="Enter your message" ></textarea>
+                <!-- <form method="post" action="scripts/contact.php"> -->
+                <form method="post" action="scripts/form-u6145.php" enctype="multipart/form-data">
+                    <input type="text" name="custom_U6152" placeholder="Enter Name" required>
+                    <input type="email" name="Email" placeholder="Enter EMail" required>
+                    <textarea name="custom_U6148" cols="30" rows="10" placeholder="Enter your message"></textarea>
                     <button type="submit" value="Submit">Send</button>
                 </form>
             </div>

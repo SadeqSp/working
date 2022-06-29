@@ -902,6 +902,15 @@ footer .footer_box .copy {
 .parallax .prod-6 {
   background-image: url("../images/prod-6.jpg");
 }
+.parallax .prod-c1 {
+  background-image: url("../images/prod-c1.jpg");
+}
+.parallax .prod-c2 {
+  background-image: url("../images/prod-c2.jpg");
+}
+.parallax .prod-c3 {
+  background-image: url("../images/prod-c3.jpg");
+}
 .parallax a {
   right: 15vw;
   font-size: 30px;
@@ -981,12 +990,6 @@ footer .footer_box .copy {
 .parallaxin .prod-b8 {
   background-image: url("../images/prod-b8.jpg");
 }
-.parallaxin .prod-b9 {
-  background-image: url("../images/prod-b9.jpg");
-}
-.parallaxin .prod-b10 {
-  background-image: url("../images/prod-b10.jpg");
-}
 .parallaxin .prod-c1 {
   background-image: url("../images/prod-c1.jpg");
 }
@@ -996,41 +999,68 @@ footer .footer_box .copy {
 .parallaxin .prod-c3 {
   background-image: url("../images/prod-c3.jpg");
 }
+.parallaxin .prod-ca1 {
+  background-image: url("../images/prod-ca1.jpg");
+}
+.parallaxin .prod-ca2 {
+  background-image: url("../images/prod-ca2.jpg");
+}
+.parallaxin .prod-ca3 {
+  background-image: url("../images/prod-ca1.jpg");
+}
+.parallaxin .prod-ca4 {
+  background-image: url("../images/prod-ca2.jpg");
+}
+.parallaxin .prod-ca5 {
+  background-image: url("../images/prod-ca1.jpg");
+}
+.parallaxin .prod-ca6 {
+  background-image: url("../images/prod-ca2.jpg");
+}
+.parallaxin .prod-ca7 {
+  background-image: url("../images/prod-ca1.jpg");
+}
+.parallaxin .prod-ca8 {
+  background-image: url("../images/prod-ca2.jpg");
+}
+.parallaxin .prod-ca9 {
+  background-image: url("../images/prod-ca1.jpg");
+}
+.parallaxin .prod-ca10 {
+  background-image: url("../images/prod-ca2.jpg");
+}
+.parallaxin .prod-ca11 {
+  background-image: url("../images/prod-ca1.jpg");
+}
+.parallaxin .prod-cb1 {
+  background-image: url("../images/prod-cb1.jpg");
+}
+.parallaxin .prod-cb2 {
+  background-image: url("../images/prod-cb2.jpg");
+}
+.parallaxin .prod-cb3 {
+  background-image: url("../images/prod-cb3.jpg");
+}
+.parallaxin .prod-cb4 {
+  background-image: url("../images/prod-cb4.jpg");
+}
+.parallaxin .prod-cc1 {
+  background-image: url("../images/prod-cc1.jpg");
+}
+.parallaxin .prod-cc2 {
+  background-image: url("../images/prod-cc2.jpg");
+}
+.parallaxin .prod-cc3 {
+  background-image: url("../images/prod-cc3.jpg");
+}
+.parallaxin .prod-cc4 {
+  background-image: url("../images/prod-cc4.jpg");
+}
 .parallaxin .prod-d1 {
   background-image: url("../images/prod-d1.jpg");
 }
 .parallaxin .prod-d2 {
   background-image: url("../images/prod-d2.jpg");
-}
-.parallaxin .prod-d3 {
-  background-image: url("../images/prod-d3.jpg");
-}
-.parallaxin .prod-d4 {
-  background-image: url("../images/prod-d4.jpg");
-}
-.parallaxin .prod-d5 {
-  background-image: url("../images/prod-d5.jpg");
-}
-.parallaxin .prod-d6 {
-  background-image: url("../images/prod-d6.jpg");
-}
-.parallaxin .prod-d7 {
-  background-image: url("../images/prod-d7.jpg");
-}
-.parallaxin .prod-d8 {
-  background-image: url("../images/prod-d8.jpg");
-}
-.parallaxin .prod-d9 {
-  background-image: url("../images/prod-d9.jpg");
-}
-.parallaxin .prod-d10 {
-  background-image: url("../images/prod-d10.jpg");
-}
-.parallaxin .prod-d11 {
-  background-image: url("../images/prod-d11.jpg");
-}
-.parallaxin .prod-d12 {
-  background-image: url("../images/prod-d12.jpg");
 }
 .parallaxin .prod-e1 {
   background-image: url("../images/prod-e1.jpg");
@@ -1038,11 +1068,23 @@ footer .footer_box .copy {
 .parallaxin .prod-e2 {
   background-image: url("../images/prod-e2.jpg");
 }
+.parallaxin .prod-e3 {
+  background-image: url("../images/prod-e3.jpg");
+}
 .parallaxin .prod-f1 {
   background-image: url("../images/prod-f1.jpg");
 }
 .parallaxin .prod-f2 {
   background-image: url("../images/prod-f2.jpg");
+}
+.parallaxin .prod-f3 {
+  background-image: url("../images/prod-f3.jpg");
+}
+.parallaxin .prod-f4 {
+  background-image: url("../images/prod-f4.jpg");
+}
+.parallaxin .prod-f5 {
+  background-image: url("../images/prod-f5.jpg");
 }
 
 @media screen and (max-width: 900px) {
